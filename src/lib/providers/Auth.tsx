@@ -3,7 +3,7 @@
 import React, { ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { routes } from "@/constants";
-import { useAccount } from "wagmi";
+import { useEthers } from "@usedapp/core";
 
 type Props = {
   children: ReactNode;
@@ -12,9 +12,10 @@ type Props = {
 function AuthProvider({ children }: Props) {
   const pathname = usePathname();
   const router = useRouter();
+  const { account } = useEthers();
 
   const isBrowser = () => typeof window !== "undefined";
-  const isAuthenticated = useAccount().isConnected;
+  const isAuthenticated = !!account;
 
   let unprotectedRoutes = [routes.AUTH];
 

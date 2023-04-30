@@ -1,5 +1,5 @@
 import AuthProvider from "@/lib/providers/Auth";
-import WagmiProvider from "@/lib/providers/Wagmi";
+import DAppProvider from "@/lib/providers/Dapp";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,9 +14,9 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body>
-        <WagmiProvider>
+        <DAppProvider>
           <AuthProvider>{children}</AuthProvider>
-        </WagmiProvider>
+        </DAppProvider>
       </body>
     </html>
   );
