@@ -1,23 +1,22 @@
 "use client";
 
 import { ReactNode } from "react";
-import { DAppProvider, Mainnet, Sepolia, Config } from "@usedapp/core";
-import { getDefaultProvider } from "ethers";
-
-const config: Config = {
-  readOnlyChainId: Mainnet.chainId,
-  readOnlyUrls: {
-    [Mainnet.chainId]: getDefaultProvider("mainnet"),
-    [Sepolia.chainId]: getDefaultProvider("sepolia"),
-  },
-};
+import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { metamaskWallet } from "@thirdweb-dev/react";
 
 interface ProviderProps {
   children: ReactNode;
 }
 
 function Provider({ children }: ProviderProps) {
-  return <DAppProvider config={config}>{children}</DAppProvider>;
+  return (
+    <ThirdwebProvider
+      activeChain="mumbai"
+      supportedWallets={[metamaskWallet()]}
+    >
+      {children}
+    </ThirdwebProvider>
+  );
 }
 
 export default Provider;

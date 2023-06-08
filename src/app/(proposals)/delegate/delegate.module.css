@@ -1,0 +1,13 @@
+.container {
+  padding: 16px 90px;
+}
+
+.delegate_container {
+  padding: 44px 0;
+}
+
+.button_container {
+  margin: 32px 0;
+  display: flex;
+  justify-content: flex-end;
+}

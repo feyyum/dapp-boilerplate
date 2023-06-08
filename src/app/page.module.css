@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_container {
+  height: calc(100dvh - 92px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 92px;
+}
+
+.hero_text {
+  font-weight: 400;
+  font-size: 76px;
+  color: var(--black);
+}
+
+.hero_text_blue {
+  font-weight: 600;
+  font-size: 76px;
+  color: var(--blue);
+}
+
+.hero_text_black {
+  font-weight: 600;
+  font-size: 76px;
+  color: var(--black);
+  text-decoration-line: line-through;
+}
+
+.marquee {
+  background-color: var(--ice-blue);
+}
+
+.marquee_container {
+  display: flex;
+  margin: 30px 120px;
+  align-items: center;
+  gap: 12px;
+}
+
+.marquee_container > p {
+  font-weight: 200;
+  font-size: 18.6px;
+  color: var(--black);
+}
+
+.chainlink_logo {
+  height: 48px;
+  margin: 0 -12px;
+}
+
+.about_container {
+  padding: 68px 0;
+}
+
+.about_title {
+  padding: 76px;
+  font-weight: var(--Bold);
+  font-size: 64px;
+  text-align: center;
+}

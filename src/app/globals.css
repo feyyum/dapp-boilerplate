@@ -1,0 +1,35 @@
+:root {
+  --xxl: 1440px;
+  --xl: 1200px;
+  --lg: 992px;
+  --md: 768px;
+  --sm: 576px;
+
+  --blue: #274aff;
+  --white: #ffffff;
+  --black: #04010d;
+  --gray: #f9fafb;
+  --red: #ef4444;
+  --light-red: #ffe9e9;
+  --green: #10b981;
+  --dark-gray: #8a8a8b;
+  --ice-blue: #f3f2f8;
+
+  --Thin: 100;
+  --ExtraLight: 200;
+  --Light: 300;
+  --Regular: 400;
+  --Medium: 500;
+  --SemiBold: 600;
+  --Bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}

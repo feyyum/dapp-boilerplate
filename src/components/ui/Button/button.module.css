@@ -1,0 +1,15 @@
+.container {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(180deg, #274aff 0%, rgba(39, 74, 255, 0.76) 100%);
+  border-radius: 48px;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.text {
+  font-weight: var(--Medium);
+  color: var(--white);
+}
